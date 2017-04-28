@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/map_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/appbar"
+        layout="@layout/include_toolbar"
+        android:title="@string/navigation_place"
+        xmlns:android="http://schemas.android.com/apk/res/android" />
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.amap.api.maps.MapView>
+    <ToggleButton
+        android:id="@+id/tb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/toolbar"
+        android:textOff="普通地图"
+        android:textOn="卫星地图"
+        android:checked="false"/>
+    <TextView
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/address"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

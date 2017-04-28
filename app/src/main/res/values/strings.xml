@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">老人跌倒检测</string>
+    <string name="navigation_home">主页</string>
+    <string name="navigation_place">地图与位置</string>
+    <string name="navigation_settings">设置</string>
+    <string name="navigation_about">关于</string>
+    <string name="appbar_scrolling_view_behavior" translatable="false">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+</resources>

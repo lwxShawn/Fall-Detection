@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:background="@color/about_content">
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:background="@drawable/about_content1"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"/>
+  </RelativeLayout>
+
+    <TextView
+        android:padding="30dp"
+        android:textSize="17sp"
+        android:layout_marginBottom="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="功能介绍：\n
+        实时监控用户是否发生跌倒。如果用户发生跌倒，手机会发出警报求助，以便获得及时的救助。"/>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="老人跌倒检测"/>
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前版本：1.0.0"/>
+
+
+
+</LinearLayout>

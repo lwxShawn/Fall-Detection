@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@color/primary_text"
+        android:text="老人跌倒检测" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/home_content"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#DAA520"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/home_back">
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="跌倒检测开关"
+            android:textColor="@color/primary_text"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:layout_marginLeft="80dp"
+            />
+        <com.suke.widget.SwitchButton
+            android:layout_marginLeft="45dp"
+            android:id="@+id/switchButton"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginBottom="10dp"
+        android:text="宽老人心，养老人身，急老人想，感老人恩"
+        android:textColor="@color/primary_text"/>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="老人安，天下安"
+        android:textColor="@color/primary_text"
+        android:layout_marginBottom="20dp"/>
+
+    <!--<TextView-->
+    <!--android:layout_gravity="center_horizontal"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="当前版本：1.0.0"/>-->
+
+
+</LinearLayout>

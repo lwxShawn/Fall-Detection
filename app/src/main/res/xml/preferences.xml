@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="个人信息"
+        android:summary="个人信息"
+        android:key="pre_key_personal_settings">
+        <EditTextPreference
+            android:maxLines="1"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:defaultValue="李奶奶"
+            android:key="pre_key_name"
+            android:title="姓名："
+            android:summary="请输入姓名"/>
+        <ListPreference
+            android:defaultValue="0"
+            android:key="pre_key_sex"
+            android:title="性别:"
+            android:summary="请选择性别"
+            android:dialogTitle="性别选择"
+            android:entries="@array/sex"
+            android:entryValues="@array/sex"/>
+        <EditTextPreference
+            android:title="年龄"
+            android:summary="请输入年龄"
+            android:key="pre_key_age"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="报警设置"
+        android:summary="报警设置"
+        android:key="pre_key_alert_settings">
+        <RingtonePreference
+            android:title="铃声设置"
+            android:summary="铃声设置"
+            android:showSilent="false"
+            android:key="pre_key_alarm"
+            android:ringtoneType="alarm"/>
+        <SwitchPreference
+            android:title="振动"
+            android:summary="振动开关"
+            android:key="pre_key_vibrate"/>
+        <EditTextPreference
+            android:title="紧急联系人"
+            android:summary="紧急联系人电话"
+            android:key="pre_key_phone"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
